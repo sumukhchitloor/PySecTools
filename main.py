@@ -14,10 +14,10 @@ import subprocess
 # List all the Python scripts in the current directory
 scripts = [f for f in os.listdir() if f.endswith('.py') and f != 'main.py']
 
-# Print a numbered list of the scripts
 for i, script in enumerate(scripts):
-    print(f'{i+1}. {script}')
-
+    # Get the name of the script without the extension
+    script_name = os.path.splitext(script)[0]
+    print(f'{i+1}. {script_name}')
 # Ask the user to enter the index of the script to run
 selection = int(input('Enter the number of the script to run: '))
 
