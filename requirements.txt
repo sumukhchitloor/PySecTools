@@ -1,10 +1,5 @@
-os
-subprocess
-requests
-sys
-socket
-re
-argparse
-paramiko
-threading
-time
+colorama==0.4.6
+paramiko==2.7.2
+requests==2.26.0
+sockets==1.0.0
+argparse==1.4.0
