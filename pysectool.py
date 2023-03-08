@@ -19,7 +19,7 @@ while True:
 
     """)
 
-    scripts = [f for f in os.listdir() if f.endswith('.py') and f != 'main.py']
+    scripts = [f for f in os.listdir() if f.endswith('.py') and f != 'pysectool.py']
 
     for i, script in enumerate(scripts):
 
